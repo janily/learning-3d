@@ -1,0 +1,19 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    font-family: 'Poppins';
+    /* background-color: rgb(24, 24, 24); */
+}
+
+.webgl{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
