@@ -34,6 +34,14 @@ gltfLoader.load('stool_dup/scene.gltf', (gltf) => {
     tl.to(gltf.scene.rotation, {y:4.1, duration: 1})
     tl.to(gltf.scene.scale, {x:0.5, y: 0.5, z: 0.5, duration: 1}, "-=1")
 
+    const modelEles = gltf.scene
+
+    modelEles.traverse((o) => {
+        if(o.isMesh) {
+            console.log('----o---', o.nameID)
+        }
+    })
+
 })
 
 
@@ -47,10 +55,17 @@ gltfLoader.load('stool_dup/scene.gltf', (gltf) => {
 // scene.add(pointLight)
 
 // Add lights
-const hemiLight = new THREE.HemisphereLight( 0xffffff, 0xffffff, 0.61 );
-    hemiLight.position.set( 0, 50, 0 );
+// const hemiLight = new THREE.HemisphereLight( 0xffffff, 0xffffff, 0.61 );
+//     hemiLight.position.set( 0, 50, 0 );
+// // Add hemisphere light to scene   
+// scene.add( hemiLight );
+
+// Add lights
+const spointLight = new THREE.SpotLight( 0xffffff, 0xffffff, 1 );
+spointLight.position.set( 0, 50, 0 );
 // Add hemisphere light to scene   
-scene.add( hemiLight );
+scene.add( spointLight );
+
 
 const dirLight = new THREE.DirectionalLight( 0xffffff, 1 );
     dirLight.position.set( -8, 12, 8 );
