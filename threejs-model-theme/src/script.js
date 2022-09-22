@@ -31,6 +31,9 @@ gltfLoader.load('stool_dup/scene.gltf', (gltf) => {
     tl.to(gltf.scene.rotation, {y: 4.7, duration: 1})
     tl.to(gltf.scene.scale, {x: 0.7, y: 0.7, z: 0.7,duration: 1}, "-=1")
     tl.to(gltf.scene.position, {x: -0.8})
+    tl.to(gltf.scene.rotation, {y:4.1, duration: 1})
+    tl.to(gltf.scene.scale, {x:0.5, y: 0.5, z: 0.5, duration: 1}, "-=1")
+
 })
 
 
