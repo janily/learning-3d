@@ -97,10 +97,10 @@ gltfLoader.load('stool_dup/scene.gltf', (gltf) => {
 // scene.add(pointLight)
 
 // Add lights
-// const hemiLight = new THREE.HemisphereLight( 0xffffff, 0xffffff, 0.61 );
-//     hemiLight.position.set( 0, 50, 0 );
-// // Add hemisphere light to scene   
-// scene.add( hemiLight );
+const hemiLight = new THREE.HemisphereLight( 0xffffff, 0xffffff, 0.61 );
+    hemiLight.position.set( 0, 50, 0 );
+// Add hemisphere light to scene   
+scene.add( hemiLight );
 
 // Add lights
 const spointLight = new THREE.SpotLight( 0xffffff, 0xffffff, 1 );
