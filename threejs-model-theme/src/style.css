@@ -19,3 +19,68 @@ body
     left: 0;
     outline: none;
 }
+
+.controls {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+  }
+  .options {
+    position: absolute;
+    left: 0;
+  }
+  .option {
+    background-size: cover;
+    background-position: 50%;
+    background-color: white;
+    margin-bottom: 3px;
+    padding: 10px;
+    height: 55px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .option:hover {
+    border-left: 5px solid white;
+    width: 58px;
+  }
+  .option.--is-active {
+    border-right: 3px solid red;
+    width: 58px;
+    cursor: default;
+  }
+  .option.--is-active:hover {
+    border-left: none;
+  }
+  .option img {
+    height: 100%;
+    width: auto;
+    pointer-events: none;
+  }
+  .info {
+    padding: 0 1em;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .info p {
+    margin-top: 0;
+  }
+  .tray__slide {
+    position: absolute;
+    display: flex;
+    right: 0;
+  /*   transform: translateX(-50%);
+    animation: wheelin 1s 2s ease-in-out forwards; */
+  }
+  .tray__swatch {
+    transition: 0.1s ease-in;
+    height: 50px;
+    min-width: 50px;
+    flex: 1;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    background-position: center;
+  }
