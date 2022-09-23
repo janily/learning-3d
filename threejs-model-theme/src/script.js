@@ -21,18 +21,28 @@ const colors = [
         shininess: 0
     },
     {
+        texture: 'bageljon.png',
+        size: [2,2,2],
         color: '66533C'
     },
     {
+        texture: 'NinjaCatBurglar.png',
+        size: [3,3,3],
         color: '173A2F'
     },
     {
+        texture: 'pattern.png',
+        size: [2,2,2],
         color: '153944'
     },
     {
+        texture: 'purples.png',
+        size: [3,3,3],
         color: '27548D'
     },
     {
+        texture: 'vavilettblack.png',
+        size: [2,2,2],
         color: '438AAC'
     }  
     ]
@@ -79,7 +89,7 @@ gltfLoader.load('stool_dup/scene.gltf', (gltf) => {
 
     tl.to(gltf.scene.rotation, {y: 4.7, duration: 1})
     tl.to(gltf.scene.scale, {x: 0.7, y: 0.7, z: 0.7,duration: 1}, "-=1")
-    tl.to(gltf.scene.position, {x: -0.8})
+    tl.to(gltf.scene.position, {x: -1})
     tl.to(gltf.scene.rotation, {y:4.1, duration: 1})
     tl.to(gltf.scene.scale, {x:0.7, y: 0.7, z: 0.7, duration: 1}, "-=1")
     tl.to(controlsColor, {opacity: 1, duration: 1})
