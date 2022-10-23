@@ -1,0 +1,11 @@
+Model Information:
+* title:	Stool dup
+* source:	https://sketchfab.com/3d-models/stool-dup-62d1a2d1a37c48d08ba149f18c6924fc
+* author:	AK STUDIO (https://sketchfab.com/inven2000)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Stool dup" (https://sketchfab.com/3d-models/stool-dup-62d1a2d1a37c48d08ba149f18c6924fc) by AK STUDIO (https://sketchfab.com/inven2000) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
