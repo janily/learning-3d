@@ -1,12 +1,10 @@
 import {
     ViewerApp,
     AssetManagerPlugin,
-    GBufferPlugin,
-    ProgressivePlugin,
+    addBasePlugins,
+    LinearToneMapping,
     TonemapPlugin,
-    SSRPlugin,
-    SSAOPlugin,
-    BloomPlugin,
+    BloomPlugin
   } from "webgi";
   import "./styles.css";
   import gsap from "gsap";
@@ -35,15 +33,18 @@ import {
     const camera = viewer.scene.activeCamera;
   
     // Add plugins individually.
-    await viewer.addPlugin(GBufferPlugin);
-    await viewer.addPlugin(new ProgressivePlugin(32));
+    // await viewer.addPlugin(GBufferPlugin);
+    // await viewer.addPlugin(new ProgressivePlugin(32));
     // await viewer.addPlugin(new TonemapPlugin(true));
-    await viewer.addPlugin(SSRPlugin);
-    await viewer.addPlugin(SSAOPlugin);
-    await viewer.addPlugin(BloomPlugin);
+    // await viewer.addPlugin(SSRPlugin);
+    // await viewer.addPlugin(SSAOPlugin);
+    // await viewer.addPlugin(BloomPlugin);
   
     // or use this to add all main ones at once.
-    // await addBasePlugins(viewer);
+    await addBasePlugins(viewer);
+
+    viewer.getPlugin(TonemapPlugin).tonemapping = LinearToneMapping;
+    viewer.getPlugin(BloomPlugin).enabled = false;
   
     // WEBGi loader
     const importer = manager.importer;
@@ -60,10 +61,12 @@ import {
     });
   
     viewer.renderer.refreshPipeline();
-    const model = await manager.addFromPath("./assets/scfi_moto.glb");
+    const model = await manager.addFromPath("./assets/motobike.glb");
     const object3d = model[0].modelObject;
     const modelPosition = object3d.position;
     const modelRotation = object3d.rotation;
+
+    // modelPosition.set(x, y, z);
   
     const loaderElement = document.querySelector(".loader");
   
