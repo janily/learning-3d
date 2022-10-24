@@ -176,9 +176,9 @@ import {
         })
   
         .to(modelPosition, {
-          x: 0.38,
-          y: -0.11,
-          z: -1.06,
+          x: 0.00,
+          y: 0.26,
+          z: -1.49,
           scrollTrigger: {
             trigger: ".third",
             start: "top bottom",
@@ -203,9 +203,9 @@ import {
         })
   
         .to(modelPosition, {
-          x: 0.92,
-          y: -0.31,
-          z: 0.66,
+          x: 0.09,
+          y: 0.13,
+          z: 1.36,
           scrollTrigger: {
             trigger: ".four",
             start: "top bottom",
@@ -218,7 +218,7 @@ import {
   
         .to(modelRotation, {
           x: 0.0,
-          y: 1.641,
+          y: -0.462,
           z: 0,
           scrollTrigger: {
             trigger: ".four",
@@ -229,9 +229,9 @@ import {
           },
         })
         .to(modelPosition, {
-          x: -0.1,
-          y: -0.11,
-          z: 0.99,
+          x: -0.08,
+          y: 0.16,
+          z: 1.36,
           scrollTrigger: {
             trigger: ".five",
             start: "top bottom",
@@ -242,9 +242,9 @@ import {
           onUpdate,
         })
         .to(modelRotation, {
-          x: -0.785,
-          y: 2.329,
-          z: 0.903,
+          x: 0.00,
+          y: -0.931,
+          z: 0.00,
           scrollTrigger: {
             trigger: ".five",
             start: "top bottom",
@@ -255,9 +255,9 @@ import {
         })
   
         .to(modelPosition, {
-          x: 0.16,
-          y: -0.3,
-          z: -0.56,
+          x: 0.00,
+          y: 0.16,
+          z: -1.42,
           scrollTrigger: {
             trigger: ".six",
             start: "top bottom",
@@ -269,9 +269,9 @@ import {
         })
   
         .to(modelRotation, {
-          x: -0.261,
-          y: 4.911,
-          z: -0.277,
+          x: 0.00,
+          y:1.089,
+          z: 0.00,
           scrollTrigger: {
             trigger: ".six",
             start: "top bottom",
