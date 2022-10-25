@@ -61,7 +61,7 @@ import {
     });
   
     viewer.renderer.refreshPipeline();
-    const model = await manager.addFromPath("./assets/motobike.glb");
+    const model = await manager.addFromPath("./assets/scene.glb");
     const object3d = model[0].modelObject;
     const modelPosition = object3d.position;
     const modelRotation = object3d.rotation;
@@ -176,9 +176,9 @@ import {
         })
   
         .to(modelPosition, {
-          x: 0.00,
-          y: 0.26,
-          z: -1.49,
+          x: 0.13,
+          y: -0.74,
+          z: -1.01,
           scrollTrigger: {
             trigger: ".third",
             start: "top bottom",
@@ -204,8 +204,8 @@ import {
   
         .to(modelPosition, {
           x: 0.09,
-          y: 0.13,
-          z: 1.36,
+          y: -0.97,
+          z: 1.30,
           scrollTrigger: {
             trigger: ".four",
             start: "top bottom",
@@ -230,8 +230,8 @@ import {
         })
         .to(modelPosition, {
           x: -0.08,
-          y: 0.16,
-          z: 1.36,
+          y: -0.90,
+          z: 1.23,
           scrollTrigger: {
             trigger: ".five",
             start: "top bottom",
@@ -256,8 +256,8 @@ import {
   
         .to(modelPosition, {
           x: 0.00,
-          y: 0.16,
-          z: -1.42,
+          y: -0.81,
+          z: -1.26,
           scrollTrigger: {
             trigger: ".six",
             start: "top bottom",
@@ -269,8 +269,8 @@ import {
         })
   
         .to(modelRotation, {
-          x: 0.00,
-          y:1.089,
+          x: 0.082,
+          y: 0.693,
           z: 0.00,
           scrollTrigger: {
             trigger: ".six",
