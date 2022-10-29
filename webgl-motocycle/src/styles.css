@@ -61,14 +61,14 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 2em;
-  font-size: 12px;
+  gap: 1em;
+  font-size: 18px;
   font-family: "Orbitron", sans-serif;
 }
 
 .progress {
   position: absolute;
-  top: 60%;
+  top: 55%;
   width: 50%;
   height: 1px;
   background: var(--red);
@@ -119,7 +119,7 @@ main {
   align-items: center;
 
   height: fit-content;
-  /* margin-top: 8%; */
+  margin-top: 3%;
   position: relative;
 }
 
