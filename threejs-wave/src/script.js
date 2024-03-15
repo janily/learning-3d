@@ -20,7 +20,7 @@ const canvas = document.querySelector('canvas.webgl')
 const scene = new THREE.Scene()
 
 // Objects
-const geometry = new THREE.PlaneBufferGeometry(1, 1, 32, 32);
+const geometry = new THREE.PlaneBufferGeometry(1.2, 1.2, 50, 50);
 const count = geometry.attributes.position.count;
 const randoms = new Float32Array(count);
 for (let i = 0; i < count; i++) {
@@ -38,10 +38,8 @@ const material = new THREE.ShaderMaterial({
     vertexShader: testVertexShader,
     fragmentShader: testFragmentShader,
     uniforms: {
-        side: THREE.DoubleSide,
-        uFrequency: { value: new THREE.Vector2(10, 5) },
         uTime: { value: 0 },
-        uColor: { value: new THREE.Color('orange') },
+        uColor: { value: new THREE.Color(0.0, 0.0, 0.0) },
         uTexture: { value: textureLoader.load('/0.jpg') }
     }
 })
@@ -92,14 +90,15 @@ camera.position.z = 2
 scene.add(camera)
 
 // Controls
-const controls = new OrbitControls(camera, canvas)
-controls.enableDamping = true
+// const controls = new OrbitControls(camera, canvas)
+// controls.enableDamping = true
 
 /**
  * Renderer
  */
 const renderer = new THREE.WebGLRenderer({
-    canvas: canvas
+    canvas: canvas,
+    alpha: true
 })
 renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
@@ -117,10 +116,10 @@ const tick = () =>
 
     // Update objects
     // sphere.rotation.y = .5 * elapsedTime
-    material.uniforms.uTime.value = elapsedTime;
+    material.uniforms.uTime.value = .5 * elapsedTime;
 
     // Update Orbital Controls
-    controls.update()
+    // controls.update()
 
     // Render
     renderer.render(scene, camera)
