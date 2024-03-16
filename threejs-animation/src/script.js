@@ -29,23 +29,15 @@ const stats = Stats()
 document.body.appendChild(stats.dom)
 
 const clock = new THREE.Clock()
+gsap.to(cube.rotation, {duration: 1, delay: 2, x: 0.2*2*Math.PI, repeat: -1})
 
-function animate(){
-
-    const elapsedtime = clock.getElapsedTime()
-    // cube.rotation.x = 1 * elapsedtime
-    // cube.rotation.y = 1 * elapsedtime
-    // cube.rotation.z = 1 * elapsedtime
-
-    // cube.position.x = Math.cos(elapsedtime)
-    // cube.position.y = Math.cos(elapsedtime)
-    // cube.position.z = Math.cos(elapsedtime)
-
-    gsap.to(cube.rotation, {duration: 1, delay: 2, x: 2})
+function animate() {
     requestAnimationFrame(animate)
-    render()
+    renderer.render(scene,camera)
     stats.update()
 }
+
+animate()
 
 function render(){
     renderer.render(scene,camera)
