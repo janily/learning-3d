@@ -97,7 +97,6 @@ gltfLoader.load('stool_dup/scene.gltf', (gltf) => {
 })
 
 
-
 // Lights
 
 // const pointLight = new THREE.AmbientLight(0xffffff, 1)

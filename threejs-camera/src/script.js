@@ -13,7 +13,7 @@ const scene = new THREE.Scene()
 
 const mesh = new THREE.Mesh(
     new THREE.BoxGeometry(1, 1, 1, 5, 5, 5),
-    new THREE.MeshBasicMaterial({ color: 0xfff000 })
+    new THREE.MeshBasicMaterial({ color: 0x165289 })
 )
 scene.add(mesh)
 
@@ -42,7 +42,7 @@ window.addEventListener('mousemove', (event) =>
 })
 
 console.log(camera.position.length())
-camera.lookAt(mesh.position)
+// camera.lookAt(mesh.position)
 scene.add(camera)
 
 const renderer = new THREE.WebGLRenderer({
