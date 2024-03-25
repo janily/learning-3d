@@ -3,5 +3,5 @@
 
 You can follow my WeChat official account for study notes.
 
-[](https://github.com/xiaoluoboding/learning-3d/blob/master/images/qrcode.jpg)
+![公众号](https://github.com/xiaoluoboding/learning-3d/blob/master/images/qrcode.jpg)
 
